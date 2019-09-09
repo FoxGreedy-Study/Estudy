@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            font: 16px, "Lato", sans-serif;
+            color: #777;
+            height: 100%;
+        }
+
+        .conteudo {
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        .conteudo-titulo {
+            position: absolute;
+            left: 0%;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .conteudo-titulo span.titulo {
+            color: #fff;
+            background-color: #111;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: #111;
+            text-align: center
+        }
+
+        p {
+            margin-bottom: 20px
+        }
+
+        /* Efeito Parallax */
+        .caixa1,
+        .caixa2,
+        .caixa3,
+        .caixa4 {
+            position: relative;
+            height: 100%;
+            /* Não repete o background */
+            background-repeat: no-repeat;
+            /* Cobre toda a area */
+            background-size: cover;
+            /* Posiciona no centro a imagem */
+            background-position: center;
+            /* Fixar e tornar a imagem em parallax */
+            background-attachment: fixed
+        }
+
+        .caixa1 {
+            background-image: url('imagens/imagem1.jpg')
+        }
+
+        .caixa2 {
+            background-image: url('imagens/imagem2.jpg')
+        }
+
+        .caixa3 {
+            background-image: url('imagens/imagem3.jpg')
+        }
+
+        .caixa4 {
+            background-image: url('imagens/imagem4.jpg')
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">Passeio de balões</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+            words etc.</p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+            words etc.</p>
+    </div>
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">Pegando a estrada</span>
+        </div>
+    </div>
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">Pôr do sol</span>
+        </div>
+    </div>
+    <div class="caixa4">
+        <div class="conteudo-titulo">
+            <span class="titulo">Montanhas</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #f2f2f2;
+}
+
+#container{
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+}
+
+#marca{
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo{
+    width: 75%;
+    float: right;
+    color: #010101
+}
+
+#conteudo-principal{
+    float: left;
+    width: 60%;
+}
+
+#conteudo-secundario{
+    float: right;
+    width: 30%;
+    background: #c2c2c2;
+}
+
+#navegacao{
+    width: 20%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px
+}
+
+#navegacao li a{
+    text-decoration: none
+}

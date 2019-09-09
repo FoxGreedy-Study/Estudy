@@ -1,0 +1,64 @@
+
+/* Seleciona todos os elementos da pagina */
+/* *{
+    border: 1px solid red
+} */
+
+/* Seletor de filho */
+
+/* li > a{
+    color: white
+} */
+
+/* Seletor Remanescente */
+
+/* li a{
+
+} */
+
+/* Irmão é quando ambos estão próximo de h1 */
+/* Seletor irmão Adjacente */
+
+/* li+a{
+} */
+
+/* Seletor irmão */
+
+/* li~p{
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    /* Usamos o text-indent pata posicionar o texto em um 
+    alinhamento apropriado para o que precisamos fazer naquele determinado momento */
+    text-indent: 40px;
+    /* Para alinharmos verticalmente as coisas, usamos o line-height */
+    line-height: 40px;
+    /* Conseguimos mexer no posicionamento do back ground colocanto propriedades nele */
+    background: url(./menu.png) no-repeat left bottom
+}
+
+/* Usamos o , para aplicarmos a mesma formatação a outras coisas */
+ul a:hover{
+
+    /* background: url(./menu.png) no-repeat right bottom */
+    /* Nesse caso conseguimos usar o background position ao nosso favor */
+    background-position: right bottom;
+    color: #ffffff;
+}
+
+#home a.home{
+    background-position: right bottom;
+    color: #ffffff;
+}
+
